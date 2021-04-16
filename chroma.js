@@ -35,8 +35,9 @@ function doChroma() {
 
 doChroma()
 }
-
+else {
 function doChroma() {
 
+}
 }
 setInterval(doChroma, chromaInterval);
