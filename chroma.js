@@ -38,7 +38,7 @@ doChroma()
 else {
 let ratImage = await window.IJS.Image.load(rat.src);
 function doChroma() {
-  ratImage = ratImage.add(1)
+  ratImage = ratImage.add(1,{channels:["RED"]})
   let chromaRat = ratImage; //finish it
   rat.src = ratImage.toDataUrl();
 }
