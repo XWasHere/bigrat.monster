@@ -1,9 +1,9 @@
 const chromaInterval = 1;
 const chromaMaxChange = 1;
 
-let level = 2;
+let comp = 0;
 if (window.IJS) {
-document.body.textContent = "A"
+comp = 1;
 }
 let rat = document.getElementById("rat");
 let hue = 0;
@@ -15,6 +15,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
 }
 
+if (!comp) {
 function updateRat() {
   rat.style.filter = `hue-rotate(${hue}deg)`;
   rat.style["-webkit-filter"] = `hue-rotate(${hue}deg)`;
@@ -33,4 +34,9 @@ function doChroma() {
 }
 
 doChroma()
+}
+
+function doChroma() {
+
+}
 setInterval(doChroma, chromaInterval);
