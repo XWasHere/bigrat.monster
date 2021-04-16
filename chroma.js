@@ -1,5 +1,10 @@
 const chromaInterval = 1;
 const chromaMaxChange = 1;
+
+let level = 2;
+if (window.IJS) {
+document.body.textContent = "A"
+}
 let rat = document.getElementById("rat");
 let hue = 0;
 
