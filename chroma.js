@@ -16,7 +16,7 @@ function updateRat() {
 }
 
 function doChroma() {
-  let h = getRandomInt(-1 * chromaMaxChange, 1 * chromaMaxChange);
+  //let h = getRandomInt(-1 * chromaMaxChange, 1 * chromaMaxChange);
   hue += 1;
   if (hue > 360) {
     hue-=360
